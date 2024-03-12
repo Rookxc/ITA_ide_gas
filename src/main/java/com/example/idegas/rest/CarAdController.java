@@ -1,21 +1,19 @@
-package com.example.idegas.controller;
+package com.example.idegas.rest;
 
-import com.example.idegas.model.CarAd;
+import com.example.idegas.dto.CarAd;
 import com.example.idegas.service.CarAdService;
+import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
+@RequiredArgsConstructor
 @RestController
 @RequestMapping("/car-ads")
 public class CarAdController {
 
     private final CarAdService carAdService;
-
-    public CarAdController(CarAdService carAdService) {
-        this.carAdService = carAdService;
-    }
 
     @PostMapping
     public ResponseEntity<CarAd> addCarAd(@RequestBody CarAd carAd) {

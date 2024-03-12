@@ -1,7 +1,7 @@
 package com.example.idegas.service;
 
-import com.example.idegas.model.CarAd;
-import com.example.idegas.repository.CarAdRepository;
+import com.example.idegas.dto.CarAd;
+import com.example.idegas.dao.CarAdRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,7 +1,7 @@
-package com.example.idegas.repository;
+package com.example.idegas.dao;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
-import com.example.idegas.model.CarAd;
+import com.example.idegas.dto.CarAd;
 import java.util.List;
 
 public interface CarAdRepository extends MongoRepository<CarAd, String> {

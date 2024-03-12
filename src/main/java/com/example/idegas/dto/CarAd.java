@@ -1,4 +1,4 @@
-package com.example.idegas.model;
+package com.example.idegas.dto;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.annotation.TypeAlias;
